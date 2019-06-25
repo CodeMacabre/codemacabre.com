@@ -1,0 +1,143 @@
+/* RESETS */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBALS */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* STRUCTURE */
+body {
+  color: #ffffff;
+  font-family: 'Lato', 'sans-serif';
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+  background: #101013;
+}
+.splash-page {
+  width: 100%;
+  height: 100vh;
+  background: #101013;
+}
+.splash-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 720px;
+  min-width: 320px;
+  text-align: center;
+}
+.splash-txt {
+  margin: 0 0 3rem 205px;
+  min-width: 275px;
+  text-align: left;
+  width: auto;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-width: 320px;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-family: 'Lato', monospace;
+  margin: 2.5em 0.65em 0 0.65em;
+  padding: 0.5em 0 0 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-align: justify;
+  color: #ffffff;
+}
+.splash-txt h1 {
+  margin: -1rem auto 0 1rem;
+  font-size: calc(100% + 2vw);
+}
+p {
+  margin: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  text-align: justify;
+  color: #ffffff;
+}
+span.quote {
+  /* padding: 0.2rem 0.5rem; */
+  /* background: #202026; */
+  font-style: italic;
+  /* z-index: -1; */
+}
+footer p {
+  margin: 0 0.8rem 0.8rem 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: right;
+}
+.title-code{
+  font-weight: 700;
+}
+.title-macabre {
+  font-weight: 300;
+}
+h1 .title-macabre {
+  font-weight: 100;
+}
+ul, ol {
+  margin: 1em 2em 1em 2em;
+  font-size: 1.1em;
+  line-height: 1em;
+  text-align: justify;
+  color: #ffffff;
+}
+li {
+  margin: 0 0 0.5rem 1rem;
+}
+ul.links {
+  margin: 1em 0 1em 0;
+  list-style: none;
+}
+.links svg {
+  margin: 0 0.8em 0 0;
+}
+
+/* LINKS & INTERACTION */
+a:link, a:visited {
+  text-decoration: none;
+  border-bottom: 1px dotted #adadb5;
+  color: #adadb5;
+  transition: 200ms;
+}
+a:hover, a:active, a:focus {
+  border-bottom: 1px dotted #ffffff;
+  color: #ffffff;
+  transition: 400ms;
+}
+
+/* IMAGES */
+.splash-img {
+  position: absolute;
+  width: 180px;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
