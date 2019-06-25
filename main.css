@@ -14,7 +14,6 @@ html {
   padding: 0;
 }
 
-
 /* STRUCTURE */
 body {
   color: #ffffff;
@@ -26,46 +25,41 @@ body {
   min-width: 320px;
   background: #101013;
 }
-.splash-page {
-  width: 100%;
-  height: 100vh;
-  background: #101013;
-}
-.splash-content {
+
+.splash {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
   max-width: 720px;
-  min-width: 320px;
   text-align: center;
 }
-.splash-txt {
-  margin: 0 0 3rem 205px;
-  min-width: 275px;
-  text-align: left;
-  width: auto;
+
+.splash .text {
+  /* float: left; */
 }
+
 footer {
   position: fixed;
   bottom: 0;
+  right: 0;
   width: 100%;
-  min-width: 320px;
 }
 
 /* TYPOGRAPHY */
 h1 {
   font-family: 'Lato', monospace;
-  margin: 2.5em 0.65em 0 0.65em;
-  padding: 0.5em 0 0 0;
-  font-size: 1.6em;
+  /* margin: 2.5rem 0.65rem 0 0.65rem; */
+  padding: 0.5rem 0 0 0;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 1.5em;
+  line-height: 1.5rem;
   text-align: justify;
   color: #ffffff;
 }
-.splash-txt h1 {
-  margin: -1rem auto 0 1rem;
+.splash h1 {
+  margin: 0 1rem 2rem 0;
   font-size: calc(100% + 2vw);
 }
 p {
@@ -76,10 +70,7 @@ p {
   color: #ffffff;
 }
 span.quote {
-  /* padding: 0.2rem 0.5rem; */
-  /* background: #202026; */
   font-style: italic;
-  /* z-index: -1; */
 }
 footer p {
   margin: 0 0.8rem 0.8rem 0.8rem;
@@ -97,9 +88,9 @@ h1 .title-macabre {
   font-weight: 100;
 }
 ul, ol {
-  margin: 1em 2em 1em 2em;
-  font-size: 1.1em;
-  line-height: 1em;
+  margin: 1rem 2rem 1rem 2rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
   text-align: justify;
   color: #ffffff;
 }
@@ -107,11 +98,11 @@ li {
   margin: 0 0 0.5rem 1rem;
 }
 ul.links {
-  margin: 1em 0 1em 0;
+  margin: 1rem 0 1rem 0;
   list-style: none;
 }
 .links svg {
-  margin: 0 0.8em 0 0;
+  margin: 0 0.8rem 0 0;
 }
 
 /* LINKS & INTERACTION */
@@ -128,16 +119,34 @@ a:hover, a:active, a:focus {
 }
 
 /* IMAGES */
-.splash-img {
-  position: absolute;
-  width: 180px;
+.splash img {
+  float: left;
+  max-width: 150px;
+  width: 30%;
+  min-width: 100px;
   height: auto;
-  top: 0;
-  left: 0;
+  margin: 0 2.4rem 1rem 0;
 }
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+
+@media (max-width: 1024px) {
+  .splash {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 650px) {
+  .splash {
     margin: 0 auto;
+    width: 100%;
+  }
+  .splash img {
+    width: 120px;
+    float: none;
+    clear: both;
+    text-align: center;
+  }
+  .splash h1 {
+    margin: 1rem;
+    font-size: calc(100% + 3vw);
+  }
 }
