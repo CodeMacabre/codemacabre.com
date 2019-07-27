@@ -7,43 +7,46 @@
 }
 
 /* GLOBALS */
+:root {
+  --white: #ffffff;
+  --haze: #d6d6da;
+  --murk: #96969a;
+  --gloom: #56565a;
+  --dark: #16161a;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
-  margin: 0;
-  padding: 0;
 }
 
 /* STRUCTURE */
 body {
-  color: #ffffff;
+  align-items: center;
+  background: var(--dark);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
   font-family: 'Lato', 'sans-serif';
   font-weight: 300;
+  justify-content: space-between;
   margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
   padding: 0;
   width: 100%;
-  min-width: 320px;
-  background: #101013;
 }
 
 .splash {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
   max-width: 720px;
   text-align: center;
 }
 
-.splash .text {
-  /* float: left; */
+header {
+  width: 100%;
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
   width: 100%;
 }
 
@@ -56,7 +59,7 @@ h1 {
   font-weight: 700;
   line-height: 1.5rem;
   text-align: justify;
-  color: #ffffff;
+  color: var(--white);
 }
 .splash h1 {
   margin: 0 1rem 2rem 0;
@@ -67,7 +70,7 @@ p {
   font-size: 1.1rem;
   line-height: 1.8rem;
   text-align: justify;
-  color: #ffffff;
+  color: var(--white);
 }
 span.quote {
   font-style: italic;
@@ -92,7 +95,7 @@ ul, ol {
   font-size: 1.1rem;
   line-height: 1rem;
   text-align: justify;
-  color: #ffffff;
+  color: var(--white);
 }
 li {
   margin: 0 0 0.5rem 1rem;
@@ -108,13 +111,13 @@ ul.links {
 /* LINKS & INTERACTION */
 a:link, a:visited {
   text-decoration: none;
-  border-bottom: 1px dotted #adadb5;
-  color: #adadb5;
+  border-bottom: 1px dotted var(--haze);
+  color: var(--haze);
   transition: 200ms;
 }
 a:hover, a:active, a:focus {
-  border-bottom: 1px dotted #ffffff;
-  color: #ffffff;
+  border-bottom: 1px dotted var(--white);
+  color: var(--white);
   transition: 400ms;
 }
 
@@ -128,16 +131,9 @@ a:hover, a:active, a:focus {
   margin: 0 2.4rem 1rem 0;
 }
 
-@media (max-width: 1024px) {
-  .splash {
-    max-width: 80%;
-  }
-}
-
 @media (max-width: 650px) {
   .splash {
-    margin: 0 auto;
-    width: 100%;
+    margin: 4rem auto 0 auto;
   }
   .splash img {
     width: 120px;
@@ -150,3 +146,28 @@ a:hover, a:active, a:focus {
     font-size: calc(100% + 3vw);
   }
 }
+
+/* @media (max-width: 420px) {
+  .splash {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    margin: 4rem auto;
+    width: 90%;
+  }
+  .splash img {
+    width: 120px;
+    float: none;
+    clear: both;
+    text-align: center;
+  }
+  .splash h1 {
+    margin: 1rem;
+    font-size: calc(100% + 3vw);
+  }
+
+  /* footer {
+    margin: 4rem 0 0 0;
+    position: absolute;
+  } */
