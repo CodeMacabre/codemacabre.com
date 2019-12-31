@@ -1,73 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>CodeMacabre</title>
+  <head>
+    <title>
+      CodeMacabre
+    </title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta title="CodeMacabre">
-  <meta name="description" content="Web development, design and mapping, with a touch of the macabre">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta title="CodeMacabre" />
+    <meta name="description" content="Web development and design with a touch of the macabre" />
 
-  
+    <!-- STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,700&display=swap" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#16161a">
-  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#16161a">
-  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#16161a">
+    <!-- SCRIPTS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <script>
+      window.onload = () => {
+        // Insert current year
+        const date = document.querySelector('#date')
+        if (date) {
+          date.innerHTML = new Date().getFullYear()
+        }
 
-  <!-- STYLES -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,700&display=swap" rel="stylesheet">
-  <link href="main.css" rel="stylesheet">
+        // Insert email address
+        const mail = document.querySelector('#mail')
 
-  <!-- SCRIPTS -->
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-  <script>
-    window.onload = () => {
-      // Insert current year
-      const date = document.querySelector('#date')
-      if (date) {
-        date.innerHTML = new Date().getFullYear()
+        let e = 'contact'
+        let at = '@'
+        let d = 'codemacabre'
+        let dot = '.'
+        let c = 'com'
+        let h = e + at + d + dot + c
+        let t = `<a class="icon-link" href="mailto: ${h}">${h}</a>`
+
+        if (mail) {
+          mail.innerHTML = t
+        }
       }
+    </script>
+  </head>
 
-      // Insert email address
-      const mail = document.querySelector('#mail')
+  <body>
+    <header>
+      <!-- <a href="./">CodeMacabre</a> -->
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      let e = 'contact'
-      let at = '@'
-      let d = 'codemacabre'
-      let dot = '.'
-      let c = 'com'
-      let h = e + at + d + dot + c
-      let t = `<a class="icon-link" href="mailto: ${h}" title="Email">${h}</a>`
+    <main>
+      <h1 class="title">CodeMacabre</h1>
+      <p class="tagline">Web development and design with a touch of the macabre.</p>
 
-      if (mail) {
-        mail.innerHTML = t
-      }
-    }
-</script>
-</head>
-<body>
-  <header></header>
-  <div class="splash">
-    <img src="./assets/cm-logo-lt.svg" alt="CodeMacabre logo">
-    <div class="text">
-      <h1><span class="title-code">Code</span><span class="title-macabre">Macabre</span></h1>
-      <p>A small freelance web development and design company, with a touch of the macabre.</p>
-      <p>Dedicated to building clean, responsive, accessible websites and web apps, our motto is <span class="quote">equality and unity for all, from the web to the grave</span>.</p>
-      <ul class="links">
-        <li><i class="fas fa-envelope-open-text"></i> <span id="mail">[ enable JavaScript to view email ]</span></li>
-        <li><i class="fab fa-github"></i> <a href="https://github.com/codemacabre" title="GitHub">@codemacabre</a></li>
-        <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/codemacabre" title="CodeMacabre on Twitter">@codemacabre</a> / <a href="https://twitter.com/mtlewando" title="Myles Lewando on Twitter">@mtlewando</a></li>
-      </ul>
-    </div>
-  </div>
-  <footer>
-    <p>&copy; <span id="date">2019</span> <span class="title-code">Code</span><span class="title-macabre">Macabre</span></p>
-  </footer>
-</body>
+      <section class="projects">
+        <h2 id="projects">Projects</h2>
+        <ul>
+          <li>
+            <i class="fas fa-folder-open"></i>
+            <a href="https://mortalitymap.com">Mortality Map</a>
+          </li>
+          <li>
+            <i class="fas fa-folder-open"></i>
+            <a href="http://openplanetary.org/opm">OpenPlanetaryMap</a>
+          </li>
+          <li class="wip">
+            <i class="fas fa-folder-open"></i>
+            PlanetaryXR
+            <span class="aside">(more details soon)</span>
+          </li>
+          <li class="wip">
+            <i class="fas fa-folder-open"></i>
+            Wastes of Nought
+            <span class="aside">(more details soon)</span>
+          </li>
+          <li>
+            <i class="fas fa-folder"></i>
+            <a href="https://worldview.earthdata.nasa.gov">Worldview</a>
+            <span class="aside">(contributor)</span>
+          </li>
+          <li>
+            <i class="fas fa-folder"></i>
+            <a href="https://disasterwatch.remotepixel.ca/">Disasterwatch</a>
+            <span class="aside">(contributor)</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="blog">
+        <h2 id="blog">Blog</h2>
+        <ul>
+          <li class="wip">
+            <i class="fas fa-pen-nib"></i>
+            The Code Macabre
+            <span class="aside">(coming soon)</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="about">About</h2>
+        <p>CodeMacabre builds websites, open source web applications and data visualisations themed around death, mortality and other aspects of the macabre.</p>
+        <p>
+          Why? Because death is something we all experience, regardless of our gender, sexuality, race, mental or physical ableness, wealth, etc. It is the ultimate in inclusivity and by understanding
+          our <em>equality in mortality</em> and respecting others accordingly, we can build better lives for all.
+        </p>
+        <p>I intend to begin with the web.</p>
+
+        <ul class="links">
+          <li><i class="fas fa-envelope-open-text"></i> <span id="mail">[ enable JavaScript to view email ]</span></li>
+          <li><i class="fab fa-github"></i> <a href="https://github.com/codemacabre">GitHub</a></li>
+          <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/codemacabre">Twitter</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="date">2019</span> CodeMacabre</p>
+    </footer>
+  </body>
 </html>
