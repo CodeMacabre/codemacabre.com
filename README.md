@@ -7,14 +7,19 @@
 This repo contains the CodeMacabre website, [codemacabre.com](https://codemacabre.com).
 
 ## Development
-The site will be built using [Vue.js](https://vuejs.org/) (subject to change).
+
+A 2020 redesign and restructure is in progress which will likely use [Vue.js](https://vuejs.org/) + [Nuxt.js](https://nuxtjs.org/) (subject to change). One of the main changes will be the addition of a [blog](https://codemacabre.com/blog).
 
 ## Design
+
 Alongside [Ethical Design](https://ind.ie/ethical-design), this site will abide by the following principals:
+
 1. Be inclusive and accessible
 2. Be lightweight and minimal
 3. Be modern and daring
 
+This means that while the site will have a somewhat experimental, changeable nature, it will always have inclusivity at its heart. If any of these experiments fail, cause anything to break or cease being accessible, [please do let me know](https://codemacabre.com#contact).
 
 ## Acknowledgements
-Design, code and content &copy; [CodeMacabre](https://codemacabre.com) / [Myles Lewando](https://myleslewando.com).
+
+Design, code and content &copy; [CodeMacabre](https://codemacabre.com) (Myles Lewando).
