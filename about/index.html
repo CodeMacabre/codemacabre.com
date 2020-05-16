@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-      CodeMacabre
+      About : CodeMacabre
     </title>
 
     <meta charset="UTF-8" />
@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,700&display=swap"
       rel="stylesheet"
     />
-    <link href="main.css" rel="stylesheet" />
+    <link href="../main.css" rel="stylesheet" />
 
     <!-- SCRIPTS -->
     <script
@@ -29,7 +29,6 @@
     ></script>
     <script>
       window.onload = () => {
-        // Insert current year
         const date = document.querySelector('#date')
         if (date) {
           function convert(num) {
@@ -82,7 +81,7 @@
 
   <body>
     <header>
-      <a class="home" href="./">CodeMacabre</a>
+      <a class="home" href="../">CodeMacabre</a>
       <nav class="menu">
         <ul>
           <li>
@@ -92,78 +91,68 @@
             <a href="/blog/">Blog</a>
           </li>
           <li>
-            <a href="/about/">About</a>
+            <a class="selected" href="/about/">About</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1 class="title">CodeMacabre</h1>
-      <p class="tagline">
-        Web development and design with a touch of the macabre.
-      </p>
-
-      <section class="projects">
-        <h2 id="projects">Projects</h2>
-        <ul>
-          <li>
-            <i class="fas fa-folder-open"></i>
-            <a href="https://mortalitymap.com">Mortality Map</a>
-          </li>
-          <li>
-            <i class="fas fa-folder-open"></i>
-            <a href="http://openplanetary.org/opm">OpenPlanetaryMap</a>
-          </li>
-          <li class="wip">
-            <i class="fas fa-folder-open"></i>
-            PlanetaryXR
-            <span class="aside">(more details soon)</span>
-          </li>
-          <li class="wip">
-            <i class="fas fa-folder-open"></i>
-            Wastes of Nought
-            <span class="aside">(more details soon)</span>
-          </li>
-          <li>
-            <i class="fas fa-folder"></i>
-            <a href="https://worldview.earthdata.nasa.gov">Worldview</a>
-            <span class="aside">(contributor)</span>
-          </li>
-          <li>
-            <i class="fas fa-folder"></i>
-            <a href="https://disasterwatch.remotepixel.ca/">Disasterwatch</a>
-            <span class="aside">(contributor)</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="blog">
-        <h2 id="blog">Blog</h2>
-        <ul>
-          <li class="wip">
-            <i class="fas fa-pen-nib"></i>
-            Coding with Sisyphus
-            <span class="aside">(coming soon)</span>
-          </li>
-          <li class="wip">
-            <i class="fas fa-pen-nib"></i>
-            The Code Macabre
-            <span class="aside">(coming soon)</span>
-          </li>
-        </ul>
-      </section>
-
       <section>
-        <h2 id="about">About</h2>
+        <h2 id="me">About Me</h2>
         <p>
           I am Myles Lewando
           <span class="aside">(pronounced 'le-van-doe')</span>, a web developer
-          and designer with a touch of the macabre. I specialise in cartography,
-          web-GIS and data visualisation, and work towards an inclusive,
-          accessible web.
+          and designer specialising in cartography, web-GIS and data
+          visualisation.
         </p>
-        <p>Read more <a href="/about">about me</a> and what CodeMacabre is.</p>
+        <p>
+          By day, I work as a front-end web developer at
+          <a href="https://www.adgistics.com/">Adgistics</a>. By night, I work
+          on web and map projects ranging from personal, to humanitarian and
+          non-profit, to commercial.
+        </p>
+        <p>
+          I am an open-source and open-data advocate and I value web
+          accessibility, inclusive design and self-directed digital learning. I
+          also have an affinity for space, ecology, insects, and the macabre
+          <span class="aside"
+            >(hence the pseudonym / company name 'CodeMacabre')</span
+          >.
+        </p>
+        <p>
+          I'd love to help you with your map or web project, particularly if
+          it's open source or aligned with my interests and values. Get in
+          touch!
+        </p>
+      </section>
+
+      <section>
+        <h2 id="codemacabre">About CodeMacabre</h2>
+        <p>
+          Being fascinated by medical history, mortality and art, I naturally
+          veer towards darker themes. One of my favourite series of artworks are
+          Hans Holbein's
+          <a href="https://archive.org/details/lessimulachreshi1538holb/"
+            >Danse Macabre</a
+          >
+          woodcuts. The meaning behind these prints aligns surprisingly closely
+          with ideas of inclusivity and equality and, as a developer, it felt
+          like an obvious progression to consider a Code Macabre, a modern-day
+          progression of the <em>danse</em>.
+        </p>
+        <p>
+          That inclusivity and equality is a fundamental right of everyone,
+          regardless of our gender, sexuality, race, mental or physical
+          ableness, wealth, etc. The code that powers the web and beyond should
+          respect those rights; the <em>danse macabre</em>'s idea of 'equality
+          in mortality' and respecting others accordingly rings true today
+          across our physical and digital lives; and beyond.
+        </p>
+        <p>
+          CodeMacabre therefore is my mission; I intend to work towards these
+          tenets with everything I do, starting with the web.
+        </p>
       </section>
     </main>
     <footer>
