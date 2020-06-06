@@ -1,0 +1,22 @@
+{
+  "name": "codemacabre.com",
+  "version": "0.1.0",
+  "description": "CodeMacabre official website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemacabre/codemacabre.com.git"
+  },
+  "author": "Myles Lewando",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codemacabre/codemacabre.com/issues"
+  },
+  "homepage": "https://codemacabre.com",
+  "dependencies": {
+    "nuxt": "^2.12.2"
+  }
+}
