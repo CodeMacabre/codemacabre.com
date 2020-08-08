@@ -1,7 +1,9 @@
 <template>
   <main>
     <section>
-      <h2 id="me">About Me</h2>
+      <h2 id="me">
+        About Me
+      </h2>
       <p>
         Hello, I'm Myles Lewando
         <span class="aside">(pronounced 'le-van-doe')</span>, a web developer and data artist.
@@ -19,7 +21,9 @@
     </section>
 
     <section>
-      <h2 id="codemacabre">About CodeMacabre</h2>
+      <h2 id="codemacabre">
+        About CodeMacabre
+      </h2>
       <p>
         Being fascinated by medical history, mortality and art, I naturally veer towards darker themes. One of my favourite series of artworks are Hans Holbein's
         <a href="https://archive.org/details/lessimulachreshi1538holb/">Danse Macabre</a> woodcuts. The meaning behind these prints aligns surprisingly closely with ideas of inclusivity and equality and, as a developer, it felt
