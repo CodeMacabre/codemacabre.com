@@ -21,7 +21,7 @@ html {
 }
 
 /* STRUCTURE */
-body {
+.container {
   background: var(--white);
   color: var(--dark);
   display: grid;
