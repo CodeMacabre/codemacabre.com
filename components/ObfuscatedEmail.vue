@@ -1,12 +1,26 @@
 <template>
-  <nuxt-link to="mailto:contact@codemacabre.com">
-    contact
-    <span class="hidden">NOSPAM</span>@codemacabre.com
-  </nuxt-link>
+  <a :href="`mailto:${mail}`">Email</a>
 </template>
 
-<style scoped>
-.hidden {
-  display: none;
+<script>
+export default {
+  data () {
+    return {
+      mail: ''
+    }
+  },
+  mounted () {
+    this.obfuscateEmail()
+  },
+  methods: {
+    obfuscateEmail () {
+      const e = 'contact'
+      const at = '@'
+      const d = 'codemacabre'
+      const dot = '.'
+      const c = 'com'
+      this.mail = e + at + d + dot + c
+    }
+  }
 }
-</style>
+</script>
