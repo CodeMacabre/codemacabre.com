@@ -2,21 +2,21 @@
   <footer>
     <ul class="links">
       <li>
-        <i class="fas fa-envelope-open-text" />
+        <FontAwesomeIcon :icon="['fas', 'envelope-open-text']" />
         <span id="mail">
           <ObfuscatedEmail />
         </span>
       </li>
       <li>
-        <i class="fab fa-github" />
+        <FontAwesomeIcon :icon="['fab', 'github']" />
         <a href="https://github.com/codemacabre">GitHub</a>
       </li>
       <li>
-        <i class="fab fa-linkedin" />
+        <FontAwesomeIcon :icon="['fab', 'linkedin']" />
         <a href="https://www.linkedin.com/in/mtlewando">LinkedIn</a>
       </li>
       <li>
-        <i class="fab fa-twitter" />
+        <FontAwesomeIcon :icon="['fab', 'twitter']" />
         <a href="https://twitter.com/codemacabre">Twitter</a>
       </li>
     </ul>
