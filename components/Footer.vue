@@ -20,10 +20,7 @@
         <a href="https://twitter.com/codemacabre">Twitter</a>
       </li>
     </ul>
-    <p>
-      &copy;
-      <span id="date">2020</span> CodeMacabre
-    </p>
+    <p>&copy; {{ year }} CodeMacabre</p>
   </footer>
 </template>
 
@@ -33,6 +30,42 @@ import ObfuscatedEmail from '~/components/ObfuscatedEmail'
 export default {
   components: {
     ObfuscatedEmail
+  },
+  data () {
+    return {
+      year: '2020'
+    }
+  },
+  mounted () {
+    this.year = this.convertDate(new Date().getFullYear())
+  },
+  methods: {
+    convertDate (num) {
+      const numerals = {
+        M: 1000,
+        CM: 900,
+        D: 500,
+        CD: 400,
+        C: 100,
+        XC: 90,
+        L: 50,
+        XL: 40,
+        X: 10,
+        IX: 9,
+        V: 5,
+        IV: 4,
+        I: 1
+      }
+
+      return Object.keys(numerals).reduce(
+        (acc, ch) => {
+          acc.str += ch.repeat(acc.num / numerals[ch])
+          acc.num %= numerals[ch]
+          return acc
+        },
+        { str: '', num }
+      ).str
+    }
   }
 }
 </script>
