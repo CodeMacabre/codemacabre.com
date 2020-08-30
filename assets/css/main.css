@@ -8,11 +8,15 @@
 
 /* GLOBALS */
 :root {
+  /* Monochrome base */
   --white: #ffffff;
-  --haze: #c6c6ca;
-  --murk: #76767a;
-  --gloom: #56565a;
+  --haze: #c0c0ce;
+  --murk: #75758A;
+  --gloom: #49495a;
   --dark: #16161a;
+
+  /* Accent */
+  --mallow: #804278;
 }
 
 html {
@@ -66,7 +70,7 @@ footer {
 }
 
 .ident {
-  border: 1px dashed var(--haze);
+  border: 1px dashed var(--murk);
   margin: 3rem 0 1rem 0;
   padding: 1rem 1rem 1.25rem 1rem;
   transition: 400ms;
@@ -186,11 +190,11 @@ a:focus {
 
 a:active,
 a:hover {
-  background: var(--haze);
-  border-bottom: 1px dashed var(--dark);
-  color: var(--dark);
-  outline: none;
-  transition: 200ms;
+  background: var(--mallow);
+  border: none;
+  color: var(--white);
+  outline: 1px dashed var(--white);
+  /* transition: 200ms; */
 }
 
 a.home {
