@@ -38,3 +38,13 @@
     </section>
   </main>
 </template>
+
+<script>
+export default {
+  head () {
+    return {
+      title: 'About : CodeMacabre'
+    }
+  }
+}
+</script>

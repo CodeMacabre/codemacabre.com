@@ -2,7 +2,7 @@
   <main>
     <section>
       <h2 id="projects">
-        Projects
+        {{ title }}
       </h2>
       <ul>
         <li>
@@ -41,3 +41,18 @@
     </section>
   </main>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      title: 'Projects'
+    }
+  },
+  head () {
+    return {
+      title: `${this.title} : CodeMacabre`
+    }
+  }
+}
+</script>

@@ -14,6 +14,11 @@ export default {
   components: {
     Header,
     Footer
+  },
+  head () {
+    return {
+      title: 'CodeMacabre'
+    }
   }
 }
 </script>
