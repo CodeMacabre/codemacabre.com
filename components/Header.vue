@@ -6,17 +6,17 @@
     <nav class="menu">
       <ul>
         <li>
-          <nuxt-link to="/projects">
+          <nuxt-link to="/prj">
             Projects
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/blog">
+          <nuxt-link to="/txt">
             Blog
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/about">
+          <nuxt-link to="/inf">
             About
           </nuxt-link>
         </li>

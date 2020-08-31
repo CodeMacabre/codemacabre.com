@@ -74,7 +74,9 @@
       </p>
       <p>
         Read more
-        <a href="/about">about me</a> and what CodeMacabre is.
+        <nuxt-link to="/inf">
+          about me
+        </nuxt-link> and what CodeMacabre is.
       </p>
     </section>
   </main>
