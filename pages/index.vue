@@ -7,8 +7,8 @@
       Web development and design with a touch of the macabre.
     </p>
 
-    <section class="projects">
-      <h2 id="projects">
+    <section class="prj">
+      <h2 id="prj">
         Projects
       </h2>
       <ul>
@@ -43,9 +43,9 @@
       </ul>
     </section>
 
-    <section class="blog">
-      <h2 id="blog">
-        Blog
+    <section class="txt">
+      <h2 id="txt">
+        Writing
       </h2>
       <ul>
         <li class="wip">

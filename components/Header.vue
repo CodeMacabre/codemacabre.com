@@ -12,7 +12,7 @@
         </li>
         <li>
           <nuxt-link to="/txt">
-            Blog
+            Writing
           </nuxt-link>
         </li>
         <li>

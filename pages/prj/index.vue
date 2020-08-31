@@ -1,7 +1,7 @@
 <template>
   <main>
     <section>
-      <h2 id="projects">
+      <h2 id="prj">
         {{ title }}
       </h2>
       <ul>
