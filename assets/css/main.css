@@ -11,12 +11,28 @@
   /* Monochrome base */
   --white: #ffffff;
   --haze: #c0c0ce;
-  --murk: #75758A;
+  --murk: #737387;
   --gloom: #49495a;
   --dark: #16161a;
 
   /* Accent */
   --mallow: #804278;
+}
+
+@font-face {
+  font-family: 'ubuntu-bold';
+  src: url('../fonts/ubuntu-b-webfont.woff2') format('woff2'),
+        url('../fonts/ubuntu-b-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntu-light';
+    src: url('../fonts/ubuntu-l-webfont.woff2') format('woff2'),
+        url('../fonts/ubuntu-l-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
 }
 
 html {
@@ -31,8 +47,7 @@ html {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   min-height: 100vh;
-  font-family: Ubuntu, sans-serif;
-  font-weight: 300;
+  font-family: 'ubuntu-light', sans-serif;
   overflow-x: hidden;
 }
 
@@ -105,8 +120,7 @@ footer p {
 }
 
 h1 {
-  font-family: Ubuntu, sans-serif;
-  font-weight: 700;
+  font-family: 'ubuntu-bold', sans-serif;
   line-height: 3.2rem;
   margin: 1rem 0 -1rem 0;
 }
@@ -122,8 +136,7 @@ h1.title {
 
 h2,
 h3 {
-  font-family: Ubuntu, sans-serif;
-  font-weight: 700;
+  font-family: 'ubuntu-bold', sans-serif;
   line-height: 1.6rem;
   margin: 0;
 }
@@ -159,11 +172,9 @@ nav.menu li:last-of-type {
 
 .wip {
   color: var(--murk);
-  font-weight: 300;
 }
 
 .tagline {
-  font-style: italic;
   text-align: left;
 }
 
