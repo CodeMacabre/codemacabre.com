@@ -7,6 +7,8 @@
 }
 
 /* GLOBALS */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 :root {
   --white: #ffffff;
   --haze: #c6c6ca;
@@ -32,29 +34,11 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  align-items: center;
-  background: rgba(255, 255, 255, 0.8);
-  display: inline-flex;
-  flex-direction: row;
-  height: 4rem;
-  justify-content: space-between;
-  margin: 0 1rem;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: calc(100% - 2rem);
-}
-
 main {
   grid-column: 3 / 7;
   justify-self: left;
   margin: 4rem auto 1rem auto;
   min-height: calc(100vh - 9rem);
-}
-
-section {
-  margin: 2rem 0;
 }
 
 footer {
@@ -65,28 +49,15 @@ footer {
   min-height: 2rem;
 }
 
-.ident {
-  border: 1px dashed var(--haze);
-  margin: 3rem 0 1rem 0;
-  padding: 1rem 1rem 1.25rem 1rem;
-  transition: 400ms;
-}
-
 /* IMAGES */
-.ident img {
-  border-radius: 100px;
+.mort {
+  position: absolute;
   display: block;
-  float: left;
-  margin: 1rem 2rem 1rem 0;
-  shape-outside: circle();
-  transition: 400ms;
-  width: 100px;
-}
-.logo img {
-  line-height: 1.6rem;
-  margin: 0 0 -0.2rem 0;
-  padding: 0;
-  width: 1rem;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
 }
 
 /* TYPOGRAPHY */
@@ -100,71 +71,12 @@ footer p {
   margin: 0;
 }
 
-h1 {
-  font-family: Ubuntu, sans-serif;
-  font-weight: 700;
-  line-height: 3.2rem;
-  margin: 1rem 0 -1rem 0;
-}
-
-h1.title {
-  line-height: 3.2rem;
-  margin: 0 0 -1rem 0;
-}
-
-.ident h2 {
+#mail,
+#date {
+  display: block;
+  text-align: center;
   margin: 0;
-}
-
-h2,
-h3 {
-  font-family: Ubuntu, sans-serif;
-  font-weight: 700;
-  line-height: 1.6rem;
-  margin: 0;
-}
-
-ul {
-  margin: 1rem 1rem 1rem 0;
-}
-
-li {
-  line-height: 1.6rem;
-  list-style: none;
-}
-
-nav.menu ul {
-  margin: 0;
-}
-
-footer ul.links {
-  margin: 0;
-}
-
-nav.menu li,
-footer ul.links li {
-  display: inline;
-  list-style: none;
-  margin: 0 0.5rem 0 0.5rem;
-}
-
-nav.menu li:first-of-type,
-nav.menu li:last-of-type {
-  margin: 0;
-}
-
-.wip {
-  color: var(--murk);
-  font-weight: 300;
-}
-
-.tagline {
-  font-style: italic;
-  text-align: left;
-}
-
-.aside {
-  font-size: 0.8rem;
+  line-height: 0.8rem;
 }
 
 /* LINKS */
@@ -193,20 +105,7 @@ a:hover {
   transition: 200ms;
 }
 
-a.home {
-  margin: -0.2rem 0;
-}
-
-a.selected {
-  border: 1px dashed var(--dark);
-}
-
 @media screen and (max-width: 960px) {
-  h1.title {
-    line-height: 2rem;
-    margin: 0 0 -0.5rem 0;
-  }
-
   main {
     grid-column: 2 / 8;
     margin: 4rem 2rem 1rem 2rem;
