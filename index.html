@@ -1,36 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>
-      CodeMacabre
-    </title>
+    <title>CodeMacabre</title>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta title="CodeMacabre" />
-    <meta
-      name="description"
-      content="Web development and design with a touch of the macabre"
-    />
+    <meta name="description" content="Web development and cyborg activism" />
 
     <!-- STYLES -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,700&display=swap"
-      rel="stylesheet"
-    />
     <link href="main.css" rel="stylesheet" />
 
     <!-- SCRIPTS -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
-      integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-      crossorigin="anonymous"
-    ></script>
     <script>
       window.onload = () => {
         // Insert current year
-        const date = document.querySelector('#date')
+        const date = document.querySelector("#date");
         if (date) {
           function convert(num) {
             const rom = {
@@ -47,145 +32,46 @@
               V: 5,
               IV: 4,
               I: 1,
-            }
+            };
 
             return Object.keys(rom).reduce(
               (acc, ch) => {
-                acc.str += ch.repeat(acc.num / rom[ch])
-                acc.num %= rom[ch]
-                return acc
+                acc.str += ch.repeat(acc.num / rom[ch]);
+                acc.num %= rom[ch];
+                return acc;
               },
-              { str: '', num: num }
-            ).str
+              { str: "", num: num }
+            ).str;
           }
 
-          date.innerHTML = convert(new Date().getFullYear())
+          date.innerHTML = convert(new Date().getFullYear());
         }
 
         // Insert email address
-        const mail = document.querySelector('#mail')
+        const mail = document.querySelector("#mail");
 
-        let e = 'contact'
-        let at = '@'
-        let d = 'codemacabre'
-        let dot = '.'
-        let c = 'com'
-        let h = e + at + d + dot + c
-        let t = `<a class="icon-link" href="mailto: ${h}">Email</a>`
+        let e = "contact";
+        let at = "@";
+        let d = "codemacabre";
+        let dot = ".";
+        let c = "com";
+        let h = e + at + d + dot + c;
+        let t = `<a class="icon-link" href="mailto: ${h}">CodeMacabre</a>`;
 
         if (mail) {
-          mail.innerHTML = t
+          mail.innerHTML = t;
         }
-      }
+      };
     </script>
   </head>
 
   <body>
-    <header>
-      <a class="home" href="./">CodeMacabre</a>
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="/projects/">Projects</a>
-          </li>
-          <li>
-            <a href="/blog/">Blog</a>
-          </li>
-          <li>
-            <a href="/about/">About</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     <main>
-      <h1 class="title">CodeMacabre</h1>
-      <p class="tagline">
-        Web development and design with a touch of the macabre.
-      </p>
-
-      <section class="projects">
-        <h2 id="projects">Projects</h2>
-        <ul>
-          <li>
-            <i class="fas fa-folder-open"></i>
-            <a href="https://mortalitymap.com">Mortality Map</a>
-          </li>
-          <li>
-            <i class="fas fa-folder-open"></i>
-            <a href="http://openplanetary.org/opm">OpenPlanetaryMap</a>
-          </li>
-          <li class="wip">
-            <i class="fas fa-folder-open"></i>
-            PlanetaryXR
-            <span class="aside">(more details soon)</span>
-          </li>
-          <li class="wip">
-            <i class="fas fa-folder-open"></i>
-            Wastes of Nought
-            <span class="aside">(more details soon)</span>
-          </li>
-          <li>
-            <i class="fas fa-folder"></i>
-            <a href="https://worldview.earthdata.nasa.gov">Worldview</a>
-            <span class="aside">(contributor)</span>
-          </li>
-          <li>
-            <i class="fas fa-folder"></i>
-            <a href="https://disasterwatch.remotepixel.ca/">Disasterwatch</a>
-            <span class="aside">(contributor)</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="blog">
-        <h2 id="blog">Blog</h2>
-        <ul>
-          <li class="wip">
-            <i class="fas fa-pen-nib"></i>
-            Coding with Sisyphus
-            <span class="aside">(coming soon)</span>
-          </li>
-          <li class="wip">
-            <i class="fas fa-pen-nib"></i>
-            The Code Macabre
-            <span class="aside">(coming soon)</span>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 id="about">About</h2>
-        <p>
-          I am Myles Lewando
-          <span class="aside">(pronounced 'le-van-doe')</span>, a web developer
-          and designer with a touch of the macabre. I specialise in cartography,
-          web-GIS and data visualisation, and work towards an inclusive,
-          accessible web.
-        </p>
-        <p>Read more <a href="/about">about me</a> and what CodeMacabre is.</p>
-      </section>
+      <img class="mort" src="mort.svg" alt="A coffin" />
     </main>
+
     <footer>
-      <ul class="links">
-        <li>
-          <i class="fas fa-envelope-open-text"></i>
-          <span id="mail">[ enable JavaScript to view email ]</span>
-        </li>
-        <li>
-          <i class="fab fa-github"></i>
-          <a href="https://github.com/codemacabre">GitHub</a>
-        </li>
-        <li>
-          <i class="fab fa-linkedin"></i>
-          <a href="https://www.linkedin.com/in/mtlewando">LinkedIn</a>
-        </li>
-        <li>
-          <i class="fab fa-twitter"></i>
-          <a href="https://twitter.com/codemacabre">Twitter</a>
-        </li>
-      </ul>
-      <p>&copy; <span id="date">2020</span> CodeMacabre</p>
+      <p><span id="date">2021</span> <span id="mail">CodeMacabre</span></p>
     </footer>
   </body>
 </html>
